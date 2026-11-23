@@ -2,7 +2,7 @@ import React, { createContext, useContext, useReducer } from 'react';
 
 const SpriteContext = createContext();
 
-const initialState = {
+export const initialState = {
   sprites: [
     {
       id: 'sprite1',
@@ -19,7 +19,7 @@ const initialState = {
   isPlaying: false
 };
 
-function spriteReducer(state, action) {
+export function spriteReducer(state, action) {
   switch (action.type) {
     case 'ADD_SPRITE':
       const newSprite = {

@@ -1,5 +1,7 @@
 # Scratch Visual Editor
 
+[![CI](https://github.com/itsjxi/scratch-visual-editor/actions/workflows/ci.yml/badge.svg)](https://github.com/itsjxi/scratch-visual-editor/actions/workflows/ci.yml)
+
 A Scratch-style block programming editor in React. You drag motion and looks blocks onto sprites and run them, with support for multiple sprites and collision detection.
 
 **Live demo:** https://agent-692ec47f444d9009e1656051--scratchanimation.netlify.app
@@ -28,9 +30,17 @@ src/
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for the full design.
 
+## Testing
+
+```bash
+npm test   # Vitest
+```
+
+33 tests cover the data-driven contract (every block definition maps to a real handler, and every label input is declared with a valid default), the motion, looks and repeat handlers (with fake timers), and the sprite reducer, including the collision swap. CI runs the tests and a production build on every push.
+
 ## Tech stack
 
-React · Webpack · Tailwind CSS
+React · Webpack · Tailwind CSS · Vitest
 
 ## Getting started
 
