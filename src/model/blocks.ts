@@ -23,10 +23,10 @@ export interface BlockSpec {
 }
 
 export const CATEGORIES: { id: Category; label: string; color: string }[] = [
-  { id: 'events', label: 'Events', color: '#f2b705' },
-  { id: 'motion', label: 'Motion', color: '#3462d8' },
-  { id: 'looks', label: 'Looks', color: '#7a4fe6' },
-  { id: 'control', label: 'Control', color: '#b85a0a' },
+  { id: 'events', label: 'Events', color: '#ffcf4a' },
+  { id: 'motion', label: 'Motion', color: '#82b1ff' },
+  { id: 'looks', label: 'Looks', color: '#bda6ff' },
+  { id: 'control', label: 'Control', color: '#ffb36b' },
 ];
 
 const n = (name: string, value: number, label = name, min?: number, max?: number): ArgSpec =>

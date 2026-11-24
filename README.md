@@ -4,6 +4,8 @@
 
 A Scratch-style visual programming editor in React and TypeScript. Drag blocks into scripts, press the green flag, and watch sprites move, glide, talk and bounce on the stage. Every edit can be undone, and the whole editor works with a keyboard and a screen reader.
 
+**Live demo:** https://scratchanimation.netlify.app
+
 ![The editor running a script: the active stack glows and the cat says "Watch this!"](docs/screenshot.png)
 
 ## What it does
